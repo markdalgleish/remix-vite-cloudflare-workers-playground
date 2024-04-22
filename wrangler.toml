@@ -1,0 +1,12 @@
+name = "remix-vite-cloudflare-workers-playground"
+
+workers_dev = true
+main = "./server.js"
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2023-04-20"
+
+[site]
+bucket = "./build/client"
+
+[build]
+command = "npm run build"
